@@ -1,0 +1,71 @@
+@import 'font';
+
+@mixin size($h,$w) {
+    height: $h;
+    width: $w;
+}
+$blue: #6EBBD3;
+$grey: #1F2021;
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Monteserrat;
+}
+.wrapper {
+    max-width: 1280px;
+    margin: auto;
+}
+
+@import 'header';
+
+@import 'sort';
+
+@import 'content';
+
+@import 'footer';
+
+.rocket-button {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    @include size(60px, 60px);
+    background-color: $blue;
+    background-image: url(../img/icon/rocket.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;    
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.message {
+    position: fixed;
+    left: 100px;
+    bottom: 100px;
+    background-color: $blue;
+    max-height: 600px;
+    font-family: Montserrat;
+    color: #fff;
+    &__block {
+        transition: .5s;
+        padding: 10px 30px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            cursor: pointer;
+        }
+        &-title {            
+            font-size: 18px;
+            font-weight: bold;
+        }
+        &-text {
+            font-size: 14px;
+        }
+    }
+}

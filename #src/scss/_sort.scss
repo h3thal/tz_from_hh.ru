@@ -1,0 +1,24 @@
+.sort {
+    margin: 40px 0px;
+    &__bar {
+        font-family: Montserrat;
+        display: flex;
+        flex-direction: row;
+        &-title {            
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        &-price, &-age {
+            font-size: 18px;
+            font-weight: normal;
+            
+            img {
+                padding-left: 10px;
+            }
+        }
+        &-price {
+            margin: 0px 25px;
+        }
+    }
+}

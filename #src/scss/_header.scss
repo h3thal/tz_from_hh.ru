@@ -1,0 +1,151 @@
+@import 'media-qieries';
+.header {
+    background-image: url("../img/bg-header.jpg");
+    background-color: $blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    padding: 25px 0px;
+    @include xs {
+        background-image: none;
+    }
+    @include sm {
+        background-image: none;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 600px;
+        @include xs {
+            width: 100%;
+            flex-direction: column;
+        }
+        @include sm {
+            width: 100%;
+            flex-direction: column
+        }
+        &-logo {
+            .menu-btn {
+                @include size (30px, 30px);
+                display: none;
+                background-color: #fff;
+                padding: 10px 20px;
+                border-radius: 5px;
+                @include xs {
+                    display: flex;
+                }
+                @include sm {
+                    display: flex;
+                }
+            }
+            @include xs {
+                flex-direction: row;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                padding: 0px 15px;
+            }
+            @include sm {
+                flex-direction: row;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                padding: 0px 30px;
+            }        
+        }
+        &-menu {
+            transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            ul {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                padding: 0px;
+                @include xs {
+                    flex-direction: column;
+                }
+                @include sm {
+                    flex-direction: column;
+                }
+                li {
+                    margin: 0px 5px;
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        padding: 10px;
+                        font-family: Montserrat;
+                        font-size: 18px;
+                        transition: .5s;
+                        &:hover {
+                            color: $blue;
+                        }
+                        @include xs {
+                            display: flex;
+                            &:hover {
+                                color: $grey;
+                            }
+                        }
+                        @include sm {
+                            display: flex;
+                            &:hover {
+                                color: $grey;
+                            }
+                        }
+                    }                
+                }
+            }
+            @include xs {
+                max-height: 0px;
+                overflow: hidden;
+                &.active {
+                    max-height: 180px;
+                }
+            }
+            @include sm {
+                max-height: 0px;
+                overflow: hidden;
+                &.active {
+                    max-height: 180px;
+                }
+            }
+        }
+    }
+    &__number {
+        font-family: Montserrat;
+        color: #fff;
+        text-align: right;
+        @include xs {
+            display: none;
+        }
+        @include sm {
+            display: none;
+        }
+        &-title {
+            font: {
+                weight: bold;
+                size: 24px;
+            }
+        }
+        &-subtitle {
+            font-size: 18px;
+        }
+    }
+    &__title {
+        font-family: Montserrat;
+        font-size: 38px;
+        color: #fff;
+        margin-top: 100px;
+        @include xs {
+            display: none;
+        }
+        @include sm {
+            display: none;
+        }
+    }
+}

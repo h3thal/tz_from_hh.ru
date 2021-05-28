@@ -1,0 +1,165 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/style.css")
+        link(rel="shortcut icon", href="./img/icon/group.svg", type="image/x-icon")
+        title Document
+    body
+        header.header
+            .wrapper
+                .header__links 
+                    .header__links-logo 
+                        img(src="./img/icon/group.svg", alt="", srcset="")
+                        img(src="./img/icon/menu.svg", alt="", srcset="").menu-btn
+                    .header__links-menu
+                        ul
+                            li 
+                                a(href="#") Main
+                            li 
+                                a(href="#") Gallery
+                            li 
+                                a(href="#") News
+                            li 
+                                a(href="#") Profile
+                .header__number
+                    .header__number-title +544 3490 00000
+                    .header__number-subtitle Звони скорее!
+            .wrapper
+                .header__title Найдено 349 котов
+        
+        .sort
+            .wrapper
+                .sort__bar 
+                    .sort__bar-title Сортировать по:
+                    .sort__bar-price Цене
+                        img(src="./img/icon/arrow.svg", alt="", srcset="")
+                    .sort__bar-age Возрасту
+                        img(src="./img/icon/arrow.svg", alt="", srcset="")
+        .content     
+            .wrapper
+                .content__card 
+                    .content__card-header
+                        img(src="./img/cat1.jpg", alt="")
+                        .sale-block -40%
+                        .heart-button
+                    .content__card-body
+                        .name Кот полосатый
+                        .info
+                            .color Коричневый окрас
+                            .age 
+                                .title 2 мес.
+                                .subtitle Возраст
+                            .paw
+                                .title 4
+                                .subtitle Кол-во лап
+                        .price 30 000 руб.
+                    .content__card-button Купить
+                .content__card.sold 
+                    .content__card-header
+                        img(src="./img/cat2.jpg", alt="")
+                        .heart-button
+                    .content__card-body
+                        .name Кот полосатый
+                        .info
+                            .color Коричневый окрас
+                            .age 
+                                .title 2 мес.
+                                .subtitle Возраст
+                            .paw
+                                .title 4
+                                .subtitle Кол-во лап
+                        .price 40 000 руб.
+                    .content__card-button Продано
+                .content__card 
+                    .content__card-header
+                        img(src="./img/cat3.jpg", alt="")
+                        .heart-button
+                    .content__card-body
+                        .name Кот полосатый
+                        .info
+                            .color Коричневый окрас
+                            .age 
+                                .title 2 мес.
+                                .subtitle Возраст
+                            .paw
+                                .title 4
+                                .subtitle Кол-во лап
+                        .price 20 000 руб.
+                    .content__card-button Купить
+                .content__card
+                    .content__card-header
+                        img(src="./img/cat1.jpg", alt="")
+                        .heart-button
+                    .content__card-body
+                        .name Кот полосатый
+                        .info
+                            .color Коричневый окрас
+                            .age 
+                                .title 2 мес.
+                                .subtitle Возраст
+                            .paw
+                                .title 4
+                                .subtitle Кол-во лап
+                        .price 25 000 руб.
+                    .content__card-button Купить
+                .content__card 
+                    .content__card-header
+                        img(src="./img/cat3.jpg", alt="")
+                        .heart-button
+                        .sale-block -40%
+                    .content__card-body
+                        .name Кот полосатый
+                        .info
+                            .color Коричневый окрас
+                            .age 
+                                .title 2 мес.
+                                .subtitle Возраст
+                            .paw
+                                .title 4
+                                .subtitle Кол-во лап
+                        .price 30 000 руб.
+                    .content__card-button Купить
+                .content__card.sold  
+                    .content__card-header
+                        img(src="./img/cat2.jpg", alt="")
+                        .heart-button
+                    .content__card-body
+                        .name Кот полосатый
+                        .info
+                            .color Коричневый окрас
+                            .age 
+                                .title 2 мес.
+                                .subtitle Возраст
+                            .paw
+                                .title 4
+                                .subtitle Кол-во лап
+                        .price 10 000 руб.
+                    .content__card-button Продано
+            .load-more Показать еще 20
+        footer.footer
+            .wrapper 
+                .footer__text 
+                    .footer__text-title Успей купить! 
+                    .footer__text-subtitle Подпишись и успей словить все акции
+                .footer__form 
+                    .footer__form-input 
+                        input.email(type="email" placeholder="Email" pattern="(\w+)@[a-zA-Z]+\.[a-z]{2,4}")
+                        label
+                            input.checkbox(type="checkbox", name="") 
+                            | Подписаться на новости
+                    .footer__form-button Подписаться
+        .message 
+            //- .message__block
+            //-     .message__block-title Добавление в избранное                    
+            //-     .message__block-text Вы добавили 
+            //-     img(src="./img/icon/close.svg", alt="")
+
+        .rocket-button 
+
+    script(src="./js/main.js") 
+
+
+
